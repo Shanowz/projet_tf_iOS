@@ -358,6 +358,7 @@
 				C140FE721E5F072400D72763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
