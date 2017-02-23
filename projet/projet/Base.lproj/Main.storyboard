@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LRg-ol-3hX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LRg-ol-3hX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -351,6 +351,9 @@
                                                 <constraint firstItem="pxe-2C-WA0" firstAttribute="centerY" secondItem="aiW-OS-lU9" secondAttribute="centerY" id="z0o-Xe-m8s"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="NDI-2z-23W" kind="show" id="pYn-Vg-bt5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -385,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REd-kp-kys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4673" y="-368"/>
+            <point key="canvasLocation" x="5980" y="349"/>
         </scene>
         <!--CHAT-->
         <scene sceneID="aX3-UV-cSJ">
@@ -404,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6u-Ia-iak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5628" y="288"/>
+            <point key="canvasLocation" x="5980" y="-303"/>
         </scene>
         <!--CALENDRIER-->
         <scene sceneID="vYr-ZV-zkz">
@@ -423,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEy-Pe-XWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5628" y="-368"/>
+            <point key="canvasLocation" x="5980" y="-978"/>
         </scene>
         <!--DOODLE-->
         <scene sceneID="8Li-UM-cBw">
@@ -442,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ez1-UL-chN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5628" y="959"/>
+            <point key="canvasLocation" x="5980" y="1000"/>
         </scene>
         <!--INTERKOT-->
         <scene sceneID="bqt-iM-Gxo">
@@ -461,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wM-om-wun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4673" y="958"/>
+            <point key="canvasLocation" x="5980" y="1662"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="90H-9c-mqY">
@@ -476,44 +479,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOM DU KOT" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JCZ-df-QWl">
-                                <rect key="frame" x="66" y="70" width="243" height="30"/>
+                                <rect key="frame" x="66" y="114" width="243" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGO DU KOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLQ-aN-vd5">
-                                <rect key="frame" x="66" y="150" width="243" height="21"/>
+                                <rect key="frame" x="66" y="194" width="243" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE DE PLACE : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDL-a7-uEH">
-                                <rect key="frame" x="79" y="196" width="167" height="21"/>
+                                <rect key="frame" x="79" y="240" width="167" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0a-0u-KLI">
-                                <rect key="frame" x="254" y="183" width="50" height="50"/>
+                                <rect key="frame" x="254" y="227" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="22D-TC-U6B"/>
                                     <constraint firstAttribute="height" constant="50" id="YNc-Gb-4by"/>
                                 </constraints>
                             </pickerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ADRESSE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KoT-Td-QZg">
-                                <rect key="frame" x="66" y="327" width="243" height="30"/>
+                                <rect key="frame" x="66" y="371" width="243" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LOYER MOYEN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E9N-X2-8zx">
-                                <rect key="frame" x="66" y="382" width="243" height="30"/>
+                                <rect key="frame" x="66" y="426" width="243" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COURTE DESCRIPTION" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e58-Wu-idr">
-                                <rect key="frame" x="66" y="242" width="243" height="60"/>
+                                <rect key="frame" x="66" y="286" width="243" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rYV-CH-Rev"/>
                                 </constraints>
@@ -524,6 +527,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhc-41-zfb">
                                 <rect key="frame" x="66" y="587" width="243" height="30"/>
                                 <state key="normal" title="VALIDER"/>
+                                <connections>
+                                    <segue destination="NDI-2z-23W" kind="show" id="6sO-Jz-8Pl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -582,6 +588,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="NDI-2z-23W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mWk-pg-xS8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -598,4 +605,7 @@
             <point key="canvasLocation" x="4674" y="289"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6sO-Jz-8Pl"/>
+    </inferredMetricsTieBreakers>
 </document>
