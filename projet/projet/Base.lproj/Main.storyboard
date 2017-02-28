@@ -43,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="DEJA INSCRIT"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-oj-hUU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-oj-hUU" customClass="BannerImageView" customModule="projet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="120"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -66,6 +66,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wWk-2A-qHW"/>
+                    <connections>
+                        <outlet property="banner" destination="ruH-oj-hUU" id="hX7-Qu-cDB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

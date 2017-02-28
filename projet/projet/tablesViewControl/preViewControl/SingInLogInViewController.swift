@@ -9,6 +9,7 @@
 import UIKit
 
 class SingInLogInViewController: UIViewController {
+    @IBOutlet weak var banner: BannerImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
