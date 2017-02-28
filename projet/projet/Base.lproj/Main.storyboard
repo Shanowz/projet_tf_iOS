@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sing In Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SingInLogInViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,70 +22,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOM DE L'APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-Ay-Npn">
-                                <rect key="frame" x="41" y="139" width="143" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-q9-JSH">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-q9-JSH">
                                 <rect key="frame" x="66" y="317" width="243" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="LOG IN WITH FACEBOOK"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-wa-cvv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-wa-cvv">
                                 <rect key="frame" x="66" y="400" width="243" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="LOG IN WITH MAIL"/>
                                 <connections>
                                     <segue destination="bJm-BA-sGw" kind="show" id="Nmd-7i-kF9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-ZI-g0o">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-ZI-g0o">
                                 <rect key="frame" x="66" y="483" width="243" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="DEJA INSCRIT"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ruH-oj-hUU">
-                                <rect key="frame" x="209" y="89" width="125" height="125"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="E5n-nQ-ud1"/>
-                                    <constraint firstAttribute="width" constant="125" id="wX1-Ve-W8j"/>
+                                    <constraint firstAttribute="height" constant="120" id="eVU-uj-v0P"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOM DE L'APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyM-Ay-Npn">
+                                <rect key="frame" x="16" y="235" width="143" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RyM-Ay-Npn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="0pL-bu-iIb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kwA-wa-cvv" secondAttribute="trailing" constant="50" id="8qu-Hm-3KF"/>
-                            <constraint firstItem="w4l-q9-JSH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FBT-qE-gvJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BtH-ZI-g0o" secondAttribute="trailing" constant="50" id="MJw-aj-PnU"/>
-                            <constraint firstItem="BtH-ZI-g0o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="MyK-BA-FGa"/>
-                            <constraint firstItem="RyM-Ay-Npn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="Nhb-AG-0F0"/>
-                            <constraint firstItem="BtH-ZI-g0o" firstAttribute="top" secondItem="kwA-wa-cvv" secondAttribute="bottom" constant="50" id="P5Z-3c-nfI"/>
-                            <constraint firstItem="ruH-oj-hUU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="V6k-Tn-waz"/>
-                            <constraint firstItem="ruH-oj-hUU" firstAttribute="leading" secondItem="RyM-Ay-Npn" secondAttribute="trailing" constant="25" id="cwT-fz-bkT"/>
-                            <constraint firstItem="kwA-wa-cvv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="kzb-w1-jyS"/>
-                            <constraint firstItem="kwA-wa-cvv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nms-l7-RK2"/>
-                            <constraint firstItem="w4l-q9-JSH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oZH-wZ-HA8"/>
-                            <constraint firstItem="kwA-wa-cvv" firstAttribute="top" secondItem="w4l-q9-JSH" secondAttribute="bottom" constant="50" id="pXD-sH-5j9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="w4l-q9-JSH" secondAttribute="trailing" constant="50" id="qN7-W7-MOl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ruH-oj-hUU" secondAttribute="trailing" constant="25" id="rti-Ai-ead"/>
-                            <constraint firstItem="BtH-ZI-g0o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkF-os-PV9"/>
-                            <constraint firstItem="w4l-q9-JSH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="zdf-pm-Ug3"/>
+                            <constraint firstItem="ruH-oj-hUU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3ld-1k-8iw"/>
+                            <constraint firstAttribute="trailing" secondItem="ruH-oj-hUU" secondAttribute="trailing" id="98Q-ub-4N6"/>
+                            <constraint firstItem="ruH-oj-hUU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="If9-Sg-IZ8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wWk-2A-qHW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="84"/>
+            <point key="canvasLocation" x="853.60000000000002" y="83.208395802098963"/>
         </scene>
-        <!--View Controller-->
+        <!--Mail Log In View Controller-->
         <scene sceneID="I2t-sZ-mUz">
             <objects>
-                <viewController id="bJm-BA-sGw" sceneMemberID="viewController">
+                <viewController id="bJm-BA-sGw" customClass="MailLogInViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7KD-6A-VEz"/>
                         <viewControllerLayoutGuide type="bottom" id="cUk-Oz-Iq2"/>
@@ -165,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1716" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--User Profile View Controller-->
         <scene sceneID="h1P-QF-E1O">
             <objects>
-                <viewController id="7Pf-Pu-Faj" sceneMemberID="viewController">
+                <viewController id="7Pf-Pu-Faj" customClass="UserProfileViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FMm-Al-paa"/>
                         <viewControllerLayoutGuide type="bottom" id="i5r-Tu-KFi"/>
@@ -243,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="2433" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Join Flat View Controller-->
         <scene sceneID="wzE-7G-6Dh">
             <objects>
-                <viewController id="q46-Yv-WvX" sceneMemberID="viewController">
+                <viewController id="q46-Yv-WvX" customClass="CreateJoinFlatViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aqj-xv-FPJ"/>
                         <viewControllerLayoutGuide type="bottom" id="hXj-zr-YLF"/>
@@ -298,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="3154" y="83"/>
         </scene>
-        <!--View Controller-->
+        <!--Existing Flats Table View Controller-->
         <scene sceneID="KEe-0c-m4L">
             <objects>
-                <viewController id="lMt-we-boO" sceneMemberID="viewController">
+                <viewController id="lMt-we-boO" customClass="ExistingFlatsTableViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JMj-Fl-b38"/>
                         <viewControllerLayoutGuide type="bottom" id="M8z-GC-O2l"/>
@@ -393,7 +382,7 @@
         <!--HOME-->
         <scene sceneID="U5i-Ad-H0P">
             <objects>
-                <viewController id="ANY-q5-baA" sceneMemberID="viewController">
+                <viewController id="ANY-q5-baA" customClass="HomeViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SLz-al-0Cr"/>
                         <viewControllerLayoutGuide type="bottom" id="0jA-lR-31H"/>
@@ -485,10 +474,10 @@
             </objects>
             <point key="canvasLocation" x="6918" y="1831"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Flat View Controller-->
         <scene sceneID="90H-9c-mqY">
             <objects>
-                <viewController id="gAh-zs-ubG" sceneMemberID="viewController">
+                <viewController id="gAh-zs-ubG" customClass="CreateFlatViewController" customModule="projet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BQD-9S-Shf"/>
                         <viewControllerLayoutGuide type="bottom" id="z6G-hv-Z8T"/>
@@ -588,7 +577,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LRg-ol-3hX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WTV-bX-RuL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WTV-bX-RuL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
