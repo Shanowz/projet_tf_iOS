@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateFlatViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateFlatViewController: UIViewController {
 
     @IBOutlet weak var numberPickerView: UIPickerView!
     
@@ -17,19 +17,28 @@ class CreateFlatViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.numberPickerView.delegate = self
-        self.numberPickerView.dataSource = self
+        numberPickerView.delegate = self
+        numberPickerView.dataSource = self
         
-        var number: Int = 1
-        for _ in 1...100 {
-            pickerNumber.append(number)
-            number += 1
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func setNumberPicker () {
+        
+        //var number: Int = 1
+        for number in 1...100 {
+            pickerNumber.append(number)
+            //number += 1
+        }
+        
+    }
+    
+}
+
+extension CreateFlatViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -40,7 +49,11 @@ class CreateFlatViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func pickerView(_: UIPickerView, titleForRow: Int, forComponent component: Int) -> String? {
+        
+        setNumberPicker()
+        
         let s = NSString(format: "%.0f", pickerNumber[titleForRow])
+        print("data : \(s)")
         return s as String
     }
     
