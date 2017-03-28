@@ -81,7 +81,6 @@
 				C140FE761E5F07DF00D72763 /* models */,
 				C140FE771E5F07DF00D72763 /* net */,
 				C140FE781E5F07DF00D72763 /* tablesViewControl */,
-				C140FE791E5F085A00D72763 /* ViewsControl */,
 				C140FE631E5F072400D72763 /* ViewController.swift */,
 				C140FE651E5F072400D72763 /* Main.storyboard */,
 				C140FE681E5F072400D72763 /* Assets.xcassets */,
@@ -134,15 +133,6 @@
 			path = tablesViewControl;
 			sourceTree = "<group>";
 		};
-		C140FE791E5F085A00D72763 /* ViewsControl */ = {
-			isa = PBXGroup;
-			children = (
-				C1B71A5A1E65AA95005156FA /* HomeViewController.swift */,
-			);
-			name = ViewsControl;
-			path = net/ViewsControl;
-			sourceTree = "<group>";
-		};
 		C140FE7C1E65A62200D72763 /* Pre */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +148,7 @@
 		C1B71A531E65A86A005156FA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C1B71A5A1E65AA95005156FA /* HomeViewController.swift */,
 				C140FE7D1E65A6B100D72763 /* SingInLogInViewController.swift */,
 				C140FE7F1E65A6E800D72763 /* MailLogInViewController.swift */,
 				C140FE811E65A70D00D72763 /* UserProfileViewController.swift */,
