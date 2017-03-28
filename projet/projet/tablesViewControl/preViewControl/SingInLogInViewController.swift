@@ -9,11 +9,12 @@
 import UIKit
 
 class SingInLogInViewController: UIViewController {
+    @IBOutlet weak var bannerImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        bannerImageView.image = BannerImageView.nextFrame()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +22,6 @@ class SingInLogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
