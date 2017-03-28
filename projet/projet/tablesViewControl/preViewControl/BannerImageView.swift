@@ -10,7 +10,7 @@ import UIKit
 
 class BannerImageView: UIImageView {
     public static let shared = BannerImageView()
-    private static var bannerImage: UIImage = UIImage(named: "banner")!
+    private var bannerImage: UIImage = UIImage(named: "banner")!
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -18,7 +18,7 @@ class BannerImageView: UIImageView {
         // Drawing codes
     }
     
-    static func nextFrame() -> UIImage{
+    func nextFrame() -> UIImage{
         return self.bannerImage
     }
 }

@@ -12,7 +12,8 @@ class ExistingFlatsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //ici la banière sera celle du kot
+        
         // Do any additional setup after loading the view.
     }
 

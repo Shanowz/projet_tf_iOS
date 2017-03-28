@@ -9,10 +9,11 @@
 import UIKit
 
 class CreateFlatViewController: UIViewController {
+    @IBOutlet weak var bannerImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bannerImageView.image = BannerImageView.shared.nextFrame()
         // Do any additional setup after loading the view.
     }
 

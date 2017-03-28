@@ -14,7 +14,7 @@ class SingInLogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerImageView.image = BannerImageView.nextFrame()
+        bannerImageView.image = BannerImageView.shared.nextFrame()
     }
 
     override func didReceiveMemoryWarning() {

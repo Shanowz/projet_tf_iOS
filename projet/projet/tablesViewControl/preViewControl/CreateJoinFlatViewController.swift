@@ -9,9 +9,12 @@
 import UIKit
 
 class CreateJoinFlatViewController: UIViewController {
-
+    @IBOutlet weak var bannerViewController: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerViewController.image = BannerImageView.shared.nextFrame()
 
         // Do any additional setup after loading the view.
     }

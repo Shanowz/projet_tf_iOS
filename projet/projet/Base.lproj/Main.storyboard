@@ -168,6 +168,9 @@
                             <constraint firstItem="oYa-fU-nzr" firstAttribute="leading" secondItem="3UK-Sb-tzp" secondAttribute="leadingMargin" constant="50" id="vwh-zA-cBh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="I4c-zp-Fs5" id="hnt-Lt-OcR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfc-tb-kWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,6 +252,9 @@
                             <constraint firstItem="HO0-Sy-KWX" firstAttribute="leading" secondItem="0vI-RF-MFd" secondAttribute="leading" id="mZM-gj-VX4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="HO0-Sy-KWX" id="jmm-O3-1p4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wh6-34-MvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,6 +316,9 @@
                             <constraint firstItem="f3Z-QZ-Zpj" firstAttribute="centerX" secondItem="1Bt-da-uR4" secondAttribute="centerX" id="fZP-Ww-vEN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerViewController" destination="1aq-lN-F6S" id="5zp-wT-hlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og4-PR-zox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,6 +405,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UJF-8K-6yp"/>
+                    <connections>
+                        <outlet property="bannerImageView" destination="D4j-Tp-qJf" id="cOc-4w-Osb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pak-nZ-hZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,7 +424,24 @@
                     <view key="view" contentMode="scaleToFill" id="OK8-SB-opX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZh-WQ-Cy4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="9fz-DS-v24"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Y4t-d6-MhK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="uio-5m-d31"/>
+                                    <constraint firstAttribute="height" constant="120" id="wYp-uU-SqQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RZh-WQ-Cy4" firstAttribute="leading" secondItem="OK8-SB-opX" secondAttribute="leading" id="AeY-id-Pqk"/>
+                            <constraint firstItem="RZh-WQ-Cy4" firstAttribute="top" secondItem="iFM-SA-7MF" secondAttribute="bottom" id="diw-EX-7Eq"/>
+                            <constraint firstAttribute="trailing" secondItem="RZh-WQ-Cy4" secondAttribute="trailing" id="jdf-F2-mn2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ao-Ia-AzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -646,6 +675,9 @@
                             <constraint firstItem="JCZ-df-QWl" firstAttribute="leading" secondItem="mbE-UI-8lz" secondAttribute="leadingMargin" constant="50" id="zGt-Zp-vy6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="kge-ys-Kjn" id="UAx-Vk-Kv5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LY4-uE-SbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

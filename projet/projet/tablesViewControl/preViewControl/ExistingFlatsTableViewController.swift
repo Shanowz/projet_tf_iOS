@@ -9,10 +9,11 @@
 import UIKit
 
 class ExistingFlatsTableViewController: UITableViewController {
+    @IBOutlet weak var bannerImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bannerImageView.image = BannerImageView.shared.nextFrame()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
