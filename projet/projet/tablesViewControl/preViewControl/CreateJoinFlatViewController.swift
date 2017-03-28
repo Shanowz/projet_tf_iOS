@@ -13,8 +13,6 @@ class CreateJoinFlatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bannerViewController.image = BannerImageView.shared.nextFrame()
 
         // Do any additional setup after loading the view.
     }

@@ -13,8 +13,9 @@ class MailLogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        bannerImageView.image = BannerImageView.shared.nextFrame()
+        bannerImageView.image = BannerImageView.shared.bannerImage
+        print("ici \(BannerImageView.shared.test)")
+        
         // Do any additional setup after loading the view.
     }
 

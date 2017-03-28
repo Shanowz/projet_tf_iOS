@@ -13,7 +13,7 @@ class ExistingFlatsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerImageView.image = BannerImageView.shared.nextFrame()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -1,20 +1,14 @@
-//
-//  SingInLogInViewController.swift
-//  projet
-//
-//  Created by student5302 on 28/02/17.
-//  Copyright © 2017 student5302. All rights reserved.
-//
 
 import UIKit
 
 class SingInLogInViewController: UIViewController {
-    @IBOutlet weak var bannerImageView: UIImageView!
-
+    @IBOutlet weak var bannerImageView: BannerImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bannerImageView.image = BannerImageView.shared.nextFrame()
+        bannerImageView.image = BannerImageView.shared.bannerImage
+        bannerImageView.frame = BannerImageView.shared.myFrame!
+        print("ici \(BannerImageView.shared.test)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +16,6 @@ class SingInLogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

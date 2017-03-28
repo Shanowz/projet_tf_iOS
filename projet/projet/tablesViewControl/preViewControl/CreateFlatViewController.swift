@@ -13,7 +13,6 @@ class CreateFlatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerImageView.image = BannerImageView.shared.nextFrame()
         // Do any additional setup after loading the view.
     }
 
