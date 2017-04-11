@@ -9,12 +9,11 @@
 import UIKit
 
 class SingInLogInViewController: UIViewController {
-    @IBOutlet weak var bannerImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        bannerImageView.image = BannerImageView.nextFrame()
     }
 
     override func didReceiveMemoryWarning() {
