@@ -9,12 +9,16 @@
 import UIKit
 
 class SingInLogInViewController: UIViewController {
-    @IBOutlet weak var bannerImageView: UIImageView!
 
+    @IBOutlet weak var validButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerImageView.image = BannerImageView.nextFrame()
+        validButton.layer.borderWidth = 1
+        validButton.layer.cornerRadius = 5
+        validButton.layer.borderColor = UIColor.white.cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {
