@@ -10,12 +10,17 @@ import UIKit
 
 class CreateFlatViewController: UIViewController {
 
+    @IBOutlet weak var validButton: UIButton!
     @IBOutlet weak var numberPickerView: UIPickerView!
     
     var pickerNumber: [Int] = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        validButton.layer.borderWidth = 1
+        validButton.layer.cornerRadius = 5
+        validButton.layer.borderColor = UIColor.darkGray.cgColor
         
         numberPickerView.delegate = self
         numberPickerView.dataSource = self
