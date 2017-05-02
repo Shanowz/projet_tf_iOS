@@ -12,8 +12,6 @@ class SingInLogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,5 +28,4 @@ class SingInLogInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

@@ -20,6 +20,8 @@ class CreateFlatViewController: UIViewController {
         numberPickerView.delegate = self
         numberPickerView.dataSource = self
         
+        setNumberPicker()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,14 +30,12 @@ class CreateFlatViewController: UIViewController {
     
     func setNumberPicker () {
         
-        //var number: Int = 1
         for number in 1...100 {
             pickerNumber.append(number)
-            //number += 1
         }
         
     }
-    
+
 }
 
 extension CreateFlatViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -49,12 +49,7 @@ extension CreateFlatViewController: UIPickerViewDelegate, UIPickerViewDataSource
     }
     
     func pickerView(_: UIPickerView, titleForRow: Int, forComponent component: Int) -> String? {
-        
-        setNumberPicker()
-        
-        let s = NSString(format: "%.0f", pickerNumber[titleForRow])
-        print("data : \(s)")
-        return s as String
+        let s = pickerNumber[titleForRow]
+        return "\(s)"
     }
-    
 }
