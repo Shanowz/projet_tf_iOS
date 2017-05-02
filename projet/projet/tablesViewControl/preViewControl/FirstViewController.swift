@@ -1,27 +1,30 @@
 //
-//  SingInLogInViewController.swift
+//  FirstViewController.swift
 //  projet
 //
-//  Created by student5302 on 28/02/17.
+//  Created by student5301 on 24/04/17.
 //  Copyright © 2017 student5302. All rights reserved.
 //
 
 import UIKit
 
-class SingInLogInViewController: UIViewController {
+class FirstViewController: UIViewController {
 
-    @IBOutlet weak var validButton: UIButton!
+    @IBOutlet weak var connectButton: UIButton!
+    @IBOutlet weak var inscrisButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
-=======
+
+        customButton(button: connectButton)
+        customButton(button: inscrisButton)
         
-        validButton.layer.borderWidth = 1
-        validButton.layer.cornerRadius = 5
-        validButton.layer.borderColor = UIColor.white.cgColor
-        
->>>>>>> 11edea44167e94f739ebb58b4ddf192ce33ebba1
+    }
+    
+    func customButton(button: UIButton) {
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor.white.cgColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +32,7 @@ class SingInLogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     /*
     // MARK: - Navigation
 
@@ -38,4 +42,5 @@ class SingInLogInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

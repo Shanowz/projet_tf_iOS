@@ -10,10 +10,15 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+    @IBOutlet weak var validButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        validButton.layer.borderWidth = 1
+        validButton.layer.cornerRadius = 5
+        validButton.layer.borderColor = UIColor.darkGray.cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {
