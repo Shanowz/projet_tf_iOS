@@ -16,6 +16,9 @@
 		C140FE801E65A6E800D72763 /* MailLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140FE7F1E65A6E800D72763 /* MailLogInViewController.swift */; };
 		C140FE821E65A70D00D72763 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140FE811E65A70D00D72763 /* UserProfileViewController.swift */; };
 		C140FE841E65A78200D72763 /* CreateJoinFlatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140FE831E65A78200D72763 /* CreateJoinFlatViewController.swift */; };
+		C17565CA1EB8B8090077A70F /* userService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17565C91EB8B8090077A70F /* userService.swift */; };
+		C17565CC1EB8B81E0077A70F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17565CB1EB8B81E0077A70F /* User.swift */; };
+		C17565CE1EB8BAA80077A70F /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17565CD1EB8BAA80077A70F /* UrlBuilder.swift */; };
 		C1B71A521E65A7ED005156FA /* CreateFlatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A511E65A7ED005156FA /* CreateFlatViewController.swift */; };
 		C1B71A571E65A930005156FA /* ExistingFlatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A561E65A930005156FA /* ExistingFlatsTableViewController.swift */; };
 		C1B71A591E65A987005156FA /* ExistingFlatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A581E65A987005156FA /* ExistingFlatTableViewCell.swift */; };
@@ -39,6 +42,9 @@
 		C140FE7F1E65A6E800D72763 /* MailLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailLogInViewController.swift; sourceTree = "<group>"; };
 		C140FE811E65A70D00D72763 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		C140FE831E65A78200D72763 /* CreateJoinFlatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateJoinFlatViewController.swift; sourceTree = "<group>"; };
+		C17565C91EB8B8090077A70F /* userService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userService.swift; sourceTree = "<group>"; };
+		C17565CB1EB8B81E0077A70F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = projet/net/User.swift; sourceTree = SOURCE_ROOT; };
+		C17565CD1EB8BAA80077A70F /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		C1B71A511E65A7ED005156FA /* CreateFlatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFlatViewController.swift; sourceTree = "<group>"; };
 		C1B71A561E65A930005156FA /* ExistingFlatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingFlatsTableViewController.swift; sourceTree = "<group>"; };
 		C1B71A581E65A987005156FA /* ExistingFlatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingFlatTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		C140FE761E5F07DF00D72763 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				C17565CB1EB8B81E0077A70F /* User.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -150,6 +157,8 @@
 		C140FE771E5F07DF00D72763 /* net */ = {
 			isa = PBXGroup;
 			children = (
+				C17565C91EB8B8090077A70F /* userService.swift */,
+				C17565CD1EB8BAA80077A70F /* UrlBuilder.swift */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -348,11 +357,14 @@
 				C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */,
 				C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */,
 				C140FE641E5F072400D72763 /* ViewController.swift in Sources */,
+				C17565CC1EB8B81E0077A70F /* User.swift in Sources */,
 				C1B71A521E65A7ED005156FA /* CreateFlatViewController.swift in Sources */,
 				C140FE821E65A70D00D72763 /* UserProfileViewController.swift in Sources */,
+				C17565CA1EB8B8090077A70F /* userService.swift in Sources */,
 				C140FE7E1E65A6B100D72763 /* SingInLogInViewController.swift in Sources */,
 				C1B71A5B1E65AA95005156FA /* HomeViewController.swift in Sources */,
 				C1B71A571E65A930005156FA /* ExistingFlatsTableViewController.swift in Sources */,
+				C17565CE1EB8BAA80077A70F /* UrlBuilder.swift in Sources */,
 				C1B71A591E65A987005156FA /* ExistingFlatTableViewCell.swift in Sources */,
 				DD6BC6FB1EADF3C300B32E4F /* DoodleViewController.swift in Sources */,
 				C140FE801E65A6E800D72763 /* MailLogInViewController.swift in Sources */,
