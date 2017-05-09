@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68BE9E2A667E81FFB6883FCE /* Pods_projet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7194DFC469FCB94C553E5A /* Pods_projet.framework */; };
+		C10CF01F1EC07776000410DF /* FieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10CF01E1EC07776000410DF /* FieldValidation.swift */; };
 		C140FE641E5F072400D72763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140FE631E5F072400D72763 /* ViewController.swift */; };
 		C140FE671E5F072400D72763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C140FE651E5F072400D72763 /* Main.storyboard */; };
 		C140FE691E5F072400D72763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C140FE681E5F072400D72763 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		77A52DF4C2FC7B5E8CD3AC7B /* Pods-projet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projet/Pods-projet.debug.xcconfig"; sourceTree = "<group>"; };
+		C10CF01E1EC07776000410DF /* FieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldValidation.swift; sourceTree = "<group>"; };
 		C140FE5E1E5F072400D72763 /* projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C140FE631E5F072400D72763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C140FE661E5F072400D72763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */,
+				C10CF01E1EC07776000410DF /* FieldValidation.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */,
 				C140FE641E5F072400D72763 /* ViewController.swift in Sources */,
 				C17565CC1EB8B81E0077A70F /* User.swift in Sources */,
+				C10CF01F1EC07776000410DF /* FieldValidation.swift in Sources */,
 				C1B71A521E65A7ED005156FA /* CreateFlatViewController.swift in Sources */,
 				C140FE821E65A70D00D72763 /* UserProfileViewController.swift in Sources */,
 				C17565CA1EB8B8090077A70F /* userService.swift in Sources */,

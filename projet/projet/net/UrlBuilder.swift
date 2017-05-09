@@ -11,9 +11,14 @@ import Foundation
 class UrlBuilder: NSObject{
     public static let shared = UrlBuilder()
     
-    let baseUrl = "http://shanowww.ddns.net/"
+    let baseUrl = "http://shanowww.ddns.net/omk/"
     
-    func signin() -> String{
-        return baseUrl+"users/"
+    func user() -> String{
+        return baseUrl+"user/"
+    }
+    
+    func isElementExistGetQuery(element: String, value: String) -> String{
+        print("\(user())?\(element)=\(value)")
+        return user()+"?\(element)=\(value)"
     }
 }
