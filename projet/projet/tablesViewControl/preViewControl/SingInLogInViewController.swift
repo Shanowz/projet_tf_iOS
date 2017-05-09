@@ -14,7 +14,6 @@ class SingInLogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         validButton.layer.borderWidth = 1
         validButton.layer.cornerRadius = 5
         validButton.layer.borderColor = UIColor.white.cgColor

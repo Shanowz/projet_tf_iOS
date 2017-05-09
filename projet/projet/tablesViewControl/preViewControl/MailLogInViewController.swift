@@ -9,7 +9,19 @@
 import UIKit
 
 class MailLogInViewController: UIViewController {
-
+    @IBOutlet weak var login_textField: UITextField!
+    @IBOutlet weak var lastName_textField: UITextField!
+    @IBOutlet weak var firstName_textField: UITextField!
+    @IBOutlet weak var mail_textField: UITextField!
+    @IBOutlet weak var pwd_textField: UITextField!
+    @IBOutlet weak var confirmPwd_textField: UITextField!
+    
+    let incorrectColor = UIColor(colorLiteralRed: (220.0/255.0), green: (99.0/255.0), blue: (99.0/255.0), alpha: 1.0)
+    let normalColor = UIColor(colorLiteralRed: 95.0/255.0, green: 94.0/255.0, blue: 95.0/255.0, alpha: 1.0)
+    let disabeledButtonColor = UIColor(colorLiteralRed: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0)
+    
+    typealias FieldValidationResult = (_ field: UITextField, _ valid: Bool) -> ()
+    
     @IBOutlet weak var validButton: UIButton!
     
     override func viewDidLoad() {
@@ -18,83 +30,112 @@ class MailLogInViewController: UIViewController {
         validButton.layer.borderWidth = 1
         validButton.layer.cornerRadius = 5
         validButton.layer.borderColor = UIColor.darkGray.cgColor
+        validButton.setTitleColor(disabeledButtonColor, for: UIControlState.disabled)
+        validButton.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
         
+        self.login_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.lastName_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.firstName_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.mail_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.pwd_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.pwd_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        self.confirmPwd_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
+        
+        disableSubmitButton()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    func validateData() -> Bool{
-//        if !isEmailValid(){
-//            return false
-//        }
-//        
-//        if isLoginValid() {
-//            
-//        }
-//        
-//        if isFirstNameValid() {
-//            
-//        }
-//        
-//        if isLastNameValid() {
-//            
-//        }
-//        
-//        if isPasswordValid() {
-//            
-//        }
+    func validate(_ field: UITextField){
+        switch field {
+        case login_textField:
+            if(FieldValidation.shared.isValid(fieldText: field.text!, type: FieldValidation.FieldType.name)){
+                if let ltext = field.text{
+                    UserService.shared.isElementExists(element: "login", value: ltext, handler: {(resp: Int) in
+                        if(resp==(-1)){
+                            field.textColor = self.normalColor
+                            print("connection error")
+                        }else if(resp==1){
+                            field.textColor = self.incorrectColor
+                            //print("element is exist")
+                        }else if(resp==0){
+                            field.textColor = self.normalColor
+                        }
+                    })
+                }
+                
+            }else{
+                field.textColor = self.incorrectColor
+                //print("invalid caracters")
+            }
+            break
+            
+        case lastName_textField, firstName_textField:
+            if(FieldValidation.shared.isValid(fieldText: field.text!, type: FieldValidation.FieldType.name)){
+                field.textColor = self.normalColor
+            }else{
+                field.textColor = self.incorrectColor
+            }
+            break
         
-        //autres test...
+        case mail_textField:
+            if(FieldValidation.shared.isValid(fieldText: field.text!, type: FieldValidation.FieldType.mail)){
+                field.textColor = self.normalColor
+            }else{
+                field.textColor = self.incorrectColor
+            }
+            break
         
-        
-   //     return true
-    //}
-    
-    //@IBAction func validButtonAction(_ sender: Any) {
-      //  if validateData(){
-            //envoyer réseau
-       // }else{
-            //pop up ou un truc du genre
-        //}
-        
-//    }
-//    
-//    func isEmailValid() -> Bool {
-//        return false
-//    }
-//    
-//    func isLoginValid() -> Bool {
-//        return false
-//    }
-//    
-//    func isFirstNameValid() -> Bool {
-//        return false
-//    }
-//    
-//    func isLastNameValid() -> Bool {
-//        return false
-//    }
-    
-//    func isPasswordValid() -> Bool {
-//        if let password = passwordTextFieldOutlet.text, let confirmPassword = confirmPasswordTextFieldOutlet.text {
-//            if password == confirmPassword {
-//                if password.characters.count < 5 {
-//                    return true
-//                }
-//            }
-//        }
-//        return false
-//    }
+        case pwd_textField:
+            if(FieldValidation.shared.isValid(fieldText: field.text!, type: FieldValidation.FieldType.pwd)){
+                if let ltext = field.text{
+                    UserService.shared.isElementExists(element: "login", value: ltext, handler: {(resp: Int) in
+                        if(resp==(-1)){
+                            field.textColor = self.normalColor
+                            print("connection error")
+                        }else if(resp==1){
+                            field.textColor = self.incorrectColor
+                            //print("element is exist")
+                        }else if(resp==0){
+                            field.textColor = self.normalColor
+                        }
+                    })
+                }
+            }
+            break
+            
+        case confirmPwd_textField:
+            
+            break
+            
+        default:
+            
+            break
+        }
 
+    }
 
+    func enableSubmitButton(){
+        validButton.layer.borderColor = UIColor.darkGray.cgColor
+        validButton.isEnabled = true
+    }
     
-}
-
-extension MailLogInViewController: UITextFieldDelegate {
+    func disableSubmitButton(){
+        validButton.layer.borderColor = UIColor.lightGray.cgColor
+        validButton.isEnabled = false
+    }
+    
+    func setTextRed(field: UITextField){
+        if((field.text?.characters.count)! > 0){
+            field.textColor = self.incorrectColor
+        }
+    }
     
     
+    @IBAction func createUser_Button(_ sender: Any) {
     
+    }
 }
