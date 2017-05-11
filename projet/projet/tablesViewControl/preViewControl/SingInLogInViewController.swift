@@ -17,7 +17,7 @@ class SingInLogInViewController: UIViewController {
         validButton.layer.borderWidth = 1
         validButton.layer.cornerRadius = 5
         validButton.layer.borderColor = UIColor.white.cgColor
-
+        
     }
 
     override func didReceiveMemoryWarning() {

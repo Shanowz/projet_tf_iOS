@@ -15,14 +15,11 @@ class MailLogInViewController: UIViewController {
     @IBOutlet weak var mail_textField: UITextField!
     @IBOutlet weak var pwd_textField: UITextField!
     @IBOutlet weak var confirmPwd_textField: UITextField!
+    @IBOutlet weak var validButton: UIButton!
     
     let incorrectColor = UIColor(colorLiteralRed: (220.0/255.0), green: (99.0/255.0), blue: (99.0/255.0), alpha: 1.0)
     let normalColor = UIColor(colorLiteralRed: 95.0/255.0, green: 94.0/255.0, blue: 95.0/255.0, alpha: 1.0)
     let disabeledButtonColor = UIColor(colorLiteralRed: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0)
-    
-    typealias FieldValidationResult = (_ field: UITextField, _ valid: Bool) -> ()
-    
-    @IBOutlet weak var validButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +105,11 @@ class MailLogInViewController: UIViewController {
             break
             
         case confirmPwd_textField:
+            if(field.text == pwd_textField.text){
+                field.textColor = self.normalColor
+            }else{
+                field.textColor = self.normalColor
+            }
             
             break
             
@@ -118,6 +120,12 @@ class MailLogInViewController: UIViewController {
 
     }
 
+    func is_all_valid() -> Bool{
+        
+        
+        return true
+    }
+    
     func enableSubmitButton(){
         validButton.layer.borderColor = UIColor.darkGray.cgColor
         validButton.isEnabled = true
