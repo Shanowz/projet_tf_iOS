@@ -12,5 +12,6 @@ pod 'SwiftyJSON', '~> 3.1'
 pod 'HanekeSwift', :git => 'https://github.com/Haneke/HanekeSwift.git', :branch => 'feature/swift-3'
 pod 'SwiftGifOrigin', '~> 1.6.1'
 pod 'ReachabilitySwift', '~> 3.0'
+pod 'HashExtensions', '~>2.0'
 
 end
