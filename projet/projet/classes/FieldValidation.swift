@@ -32,6 +32,24 @@ class FieldValidation: NSObject{
             return false
             
         case .pwd:
+            if(fieldText.characters.count < 6){
+                return false
+            }
+            
+            let regexUPCASE = "*[A-Z]*"
+            let regexLOWERCASE = "*[a-z]*"
+            let regexNumbers = "*[0-9]*"
+            if nil == fieldText.range(of:regexUPCASE, options: .regularExpression) {
+                return false
+            }
+            
+            if nil == fieldText.range(of:regexLOWERCASE, options: .regularExpression){
+                return false
+            }
+            
+            if nil == fieldText.range(of:regexNumbers, options: .regularExpression){
+                return false
+            }
             
             return true
 

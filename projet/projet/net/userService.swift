@@ -38,6 +38,7 @@ class UserService: NSObject{
         })
     }
     
+    //return 0 if true, 1 if not, -1 if request error
     func isElementExists(element: String, value: String, handler: @escaping (Int) -> ()){
         let url = UrlBuilder.shared.isElementExistGetQuery(element: element, value: value)
         

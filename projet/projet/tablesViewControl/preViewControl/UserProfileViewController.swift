@@ -9,8 +9,8 @@
 import UIKit
 
 class UserProfileViewController: UIViewController {
-
     @IBOutlet weak var validButton: UIButton!
+    var user:User?
     
     override func viewDidLoad() {
         super.viewDidLoad()

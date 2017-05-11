@@ -287,7 +287,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createUser_Button:" destination="bJm-BA-sGw" eventType="touchUpInside" id="AEi-3p-ItF"/>
-                                    <segue destination="7Pf-Pu-Faj" kind="show" id="UV8-Gp-jKv"/>
+                                    <segue destination="7Pf-Pu-Faj" kind="show" identifier="user_profil" id="UV8-Gp-jKv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-Pf-h4R">
@@ -795,7 +795,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TEV-ya-0n6" id="iaq-T5-8CU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dOr-Q6-6co">
