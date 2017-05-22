@@ -27,7 +27,7 @@
 		C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5C1E65B427005156FA /* ExistingFlatsViewController.swift */; };
 		C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5F1E65B6DB005156FA /* BannerImageView.swift */; };
 		C1BDBC601EC4A0D8007306B6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BDBC5F1EC4A0D8007306B6 /* CustomButton.swift */; };
-		DD4CEDC51E8A499C0017D93F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */; };
+		C1FD8A2F1ED32DC300242006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD8A2E1ED32DC300242006 /* AppDelegate.swift */; };
 		DD6BC6FB1EADF3C300B32E4F /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */; };
 		DDCA3E051EAE36BD0014A4A2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA3E041EAE36BD0014A4A2 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,8 +55,8 @@
 		C1B71A5C1E65B427005156FA /* ExistingFlatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingFlatsViewController.swift; sourceTree = "<group>"; };
 		C1B71A5F1E65B6DB005156FA /* BannerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerImageView.swift; sourceTree = "<group>"; };
 		C1BDBC5F1EC4A0D8007306B6 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C1FD8A2E1ED32DC300242006 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C95C04A602CF5CC462CFE90C /* Pods-projet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet.release.xcconfig"; path = "Pods/Target Support Files/Pods-projet/Pods-projet.release.xcconfig"; sourceTree = "<group>"; };
-		DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = projet/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
 		DDCA3E041EAE36BD0014A4A2 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		FD7194DFC469FCB94C553E5A /* Pods_projet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,9 +138,9 @@
 		C140FE741E5F07DF00D72763 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */,
 				C10CF01E1EC07776000410DF /* FieldValidation.swift */,
 				C1BDBC5F1EC4A0D8007306B6 /* CustomButton.swift */,
+				C1FD8A2E1ED32DC300242006 /* AppDelegate.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -359,9 +359,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4CEDC51E8A499C0017D93F /* AppDelegate.swift in Sources */,
 				C1BDBC601EC4A0D8007306B6 /* CustomButton.swift in Sources */,
 				C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */,
+				C1FD8A2F1ED32DC300242006 /* AppDelegate.swift in Sources */,
 				C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */,
 				C140FE641E5F072400D72763 /* ViewController.swift in Sources */,
 				C17565CC1EB8B81E0077A70F /* User.swift in Sources */,
