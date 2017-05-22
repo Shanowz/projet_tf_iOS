@@ -11,6 +11,10 @@ import UIKit
 class UserProfileViewController: UIViewController {
 
     @IBOutlet weak var validButton: UIButton!
+    @IBOutlet weak var ecole: UITextField!
+    @IBOutlet weak var typeEcole: UITextField!
+    @IBOutlet weak var desc: UITextField!
+    @IBOutlet weak var centreInteret: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

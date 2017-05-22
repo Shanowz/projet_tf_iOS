@@ -28,7 +28,9 @@
 		C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5F1E65B6DB005156FA /* BannerImageView.swift */; };
 		DD4CEDC51E8A499C0017D93F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */; };
 		DD6BC6FB1EADF3C300B32E4F /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */; };
+		DDC7D5F61ED310A000EAC284 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7D5F51ED310A000EAC284 /* TestCollectionViewCell.swift */; };
 		DDCA3E051EAE36BD0014A4A2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCA3E041EAE36BD0014A4A2 /* FirstViewController.swift */; };
+		DDD582661ECC702B00100D9B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD582651ECC702B00100D9B /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +58,9 @@
 		C95C04A602CF5CC462CFE90C /* Pods-projet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet.release.xcconfig"; path = "Pods/Target Support Files/Pods-projet/Pods-projet.release.xcconfig"; sourceTree = "<group>"; };
 		DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = projet/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoodleViewController.swift; sourceTree = "<group>"; };
+		DDC7D5F51ED310A000EAC284 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		DDCA3E041EAE36BD0014A4A2 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DDD582651ECC702B00100D9B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD7194DFC469FCB94C553E5A /* Pods_projet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +133,7 @@
 		C140FE731E5F07DF00D72763 /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				DDC7D5F51ED310A000EAC284 /* TestCollectionViewCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */,
+				DDD582651ECC702B00100D9B /* HomeCollectionViewCell.swift */,
 			);
 			name = Screen;
 			sourceTree = "<group>";
@@ -359,12 +365,14 @@
 				DD4CEDC51E8A499C0017D93F /* AppDelegate.swift in Sources */,
 				C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */,
 				C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */,
+				DDD582661ECC702B00100D9B /* HomeCollectionViewCell.swift in Sources */,
 				C140FE641E5F072400D72763 /* ViewController.swift in Sources */,
 				C17565CC1EB8B81E0077A70F /* User.swift in Sources */,
 				C10CF01F1EC07776000410DF /* FieldValidation.swift in Sources */,
 				C1B71A521E65A7ED005156FA /* CreateFlatViewController.swift in Sources */,
 				C140FE821E65A70D00D72763 /* UserProfileViewController.swift in Sources */,
 				C17565CA1EB8B8090077A70F /* userService.swift in Sources */,
+				DDC7D5F61ED310A000EAC284 /* TestCollectionViewCell.swift in Sources */,
 				C140FE7E1E65A6B100D72763 /* SingInLogInViewController.swift in Sources */,
 				C1B71A5B1E65AA95005156FA /* HomeViewController.swift in Sources */,
 				C1B71A571E65A930005156FA /* ExistingFlatsTableViewController.swift in Sources */,

@@ -16,6 +16,7 @@ class MailLogInViewController: UIViewController {
     @IBOutlet weak var pwd_textField: UITextField!
     @IBOutlet weak var confirmPwd_textField: UITextField!
     @IBOutlet weak var validButton: UIButton!
+    @IBOutlet weak var scroll: UIScrollView!
     
     let incorrectColor = UIColor(colorLiteralRed: (220.0/255.0), green: (99.0/255.0), blue: (99.0/255.0), alpha: 1.0)
     let normalColor = UIColor(colorLiteralRed: 95.0/255.0, green: 94.0/255.0, blue: 95.0/255.0, alpha: 1.0)
@@ -39,6 +40,15 @@ class MailLogInViewController: UIViewController {
         self.confirmPwd_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
         
         disableSubmitButton()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let size = validButton.frame.origin.y+validButton.frame.size.height
+        
+        let marginB = CGFloat(25)
+        
+        scroll.contentSize = CGSize(width: 0, height: size+marginB)
     }
     
     override func didReceiveMemoryWarning() {
