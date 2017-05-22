@@ -1,28 +1,19 @@
 //
-//  UserProfileViewController.swift
+//  ViewController.swift
 //  projet
 //
-//  Created by student5302 on 28/02/17.
+//  Created by student5302 on 22/05/17.
 //  Copyright © 2017 student5302. All rights reserved.
 //
 
 import UIKit
 
-class UserProfileViewController: UIViewController {
-    @IBOutlet weak var validButton: UIButton!
-    @IBOutlet weak var ecole: UITextField!
-    @IBOutlet weak var typeEcole: UITextField!
-    @IBOutlet weak var desc: UITextField!
-    @IBOutlet weak var centreInteret: UITextField!
-    var user:User?
-    
+class ViewController: UIImagePickerController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        validButton.layer.borderWidth = 1
-        validButton.layer.cornerRadius = 5
-        validButton.layer.borderColor = UIColor.darkGray.cgColor
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

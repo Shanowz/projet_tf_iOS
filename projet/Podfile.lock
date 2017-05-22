@@ -12,6 +12,7 @@ PODS:
   - Neon (0.4.0)
   - ReachabilitySwift (3)
   - SwiftGifOrigin (1.6.1)
+  - SwiftHash (1.1.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -22,17 +23,23 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - ReachabilitySwift (~> 3.0)
   - SwiftGifOrigin (~> 1.6.1)
+  - SwiftHash (from `https://github.com/onmyway133/SwiftHash`)
   - SwiftyJSON (~> 3.1)
 
 EXTERNAL SOURCES:
   HanekeSwift:
     :branch: feature/swift-3
     :git: https://github.com/Haneke/HanekeSwift.git
+  SwiftHash:
+    :git: https://github.com/onmyway133/SwiftHash
 
 CHECKOUT OPTIONS:
   HanekeSwift:
     :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
     :git: https://github.com/Haneke/HanekeSwift.git
+  SwiftHash:
+    :commit: bc57c37bc7be27c47641630554dae98b2abc0df1
+    :git: https://github.com/onmyway133/SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -45,8 +52,13 @@ SPEC CHECKSUMS:
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftHash: 18c0f28ea3ea336742cbe72dc84f60dad562addb
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: 380a62a27dac1b2fecd6d134aabd85378d8f1b38
+=======
+PODFILE CHECKSUM: c161f500704879c61b5e0522b6fb56eaf825fb47
+>>>>>>> network
 
 COCOAPODS: 1.2.0
