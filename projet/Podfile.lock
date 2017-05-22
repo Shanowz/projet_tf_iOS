@@ -1,13 +1,25 @@
 PODS:
   - Alamofire (4.4.0)
+  - CalendarKit (0.1.17):
+    - DateToolsSwift
+    - DynamicColor
+    - Neon
+  - DateToolsSwift (2.0.3)
+  - DynamicColor (3.3)
   - HanekeSwift (0.10.1)
+  - ImagePicker (2.1.1)
+  - IQKeyboardManagerSwift (4.0.9)
+  - Neon (0.4.0)
   - ReachabilitySwift (3)
   - SwiftGifOrigin (1.6.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - CalendarKit
   - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - ImagePicker
+  - IQKeyboardManagerSwift
   - ReachabilitySwift (~> 3.0)
   - SwiftGifOrigin (~> 1.6.1)
   - SwiftyJSON (~> 3.1)
@@ -19,16 +31,22 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   HanekeSwift:
-    :commit: 1157a124ec699f4ad926cb054f1d0bfce88ae7a9
+    :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
     :git: https://github.com/Haneke/HanekeSwift.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  CalendarKit: cf59e1e76c6a02c69a047cb7f091efc8b20e9881
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
+  DynamicColor: 3cdaa1e01c16e93ba744e0630f768373e0fc7a7d
   HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  ImagePicker: fe4c699abb56ff03994fa98d8b02e3883ee118be
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 2140ae8aea67a7ccbf7fb279bb8aff88f0ae057e
+PODFILE CHECKSUM: 380a62a27dac1b2fecd6d134aabd85378d8f1b38
 
 COCOAPODS: 1.2.0

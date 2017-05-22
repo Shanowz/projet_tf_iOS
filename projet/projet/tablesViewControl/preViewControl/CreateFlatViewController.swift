@@ -58,3 +58,26 @@ extension CreateFlatViewController: UIPickerViewDelegate, UIPickerViewDataSource
         return "\(s)"
     }
 }
+
+extension CreateFlatViewController: UIImagePickerControllerDelegate {
+    
+    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        
+        
+        
+    }
+    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
+        
+        
+        
+    }
+    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+        
+        
+        
+    }
+    
+}
+
+
+
