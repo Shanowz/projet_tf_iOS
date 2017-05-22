@@ -36,9 +36,9 @@ class FieldValidation: NSObject{
                 return false
             }
             
-            let regexUPCASE = "*[A-Z]*"
-            let regexLOWERCASE = "*[a-z]*"
-            let regexNumbers = "*[0-9]*"
+            let regexUPCASE = "[A-Z]"
+            let regexLOWERCASE = "[a-z]"
+            let regexNumbers = "[0-9]"
             if nil == fieldText.range(of:regexUPCASE, options: .regularExpression) {
                 return false
             }

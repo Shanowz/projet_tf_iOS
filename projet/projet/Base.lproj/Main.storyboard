@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zjj-DY-zJ7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zjj-DY-zJ7">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -483,16 +483,19 @@
                                                             <constraint firstAttribute="height" constant="1" id="7z3-F7-Rf0"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPD-sP-dV5">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPD-sP-dV5" customClass="CustomButton" customModule="projet" customModuleProvider="target">
                                                         <rect key="frame" x="62" y="462" width="290" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="rOb-GF-ftE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <state key="normal" title="VALIDER">
+                                                        <state key="normal" title="CREE PROFIL">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="createUser:" destination="bJm-BA-sGw" eventType="touchUpInside" id="iTy-QH-fU4"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -572,6 +575,15 @@
                             <constraint firstItem="o2e-w4-pFV" firstAttribute="leading" secondItem="3UK-Sb-tzp" secondAttribute="leading" id="eYU-8G-ekp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPwd_textField" destination="nZM-eK-NaS" id="C36-BT-5Jj"/>
+                        <outlet property="firstName_textField" destination="8WL-Am-cmU" id="etn-XW-0N5"/>
+                        <outlet property="lastName_textField" destination="YHq-cU-CEZ" id="I1V-BB-fux"/>
+                        <outlet property="login_textField" destination="KWI-1f-SwO" id="soF-Ra-e1q"/>
+                        <outlet property="mail_textField" destination="4q8-Fb-ZL7" id="Gvb-U5-htU"/>
+                        <outlet property="pwd_textField" destination="wJy-1S-P1h" id="teN-Zf-4x8"/>
+                        <outlet property="validButton" destination="ZPD-sP-dV5" id="t4m-sw-eI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfc-tb-kWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -878,7 +890,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TEV-ya-0n6" id="iaq-T5-8CU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dOr-Q6-6co">
@@ -969,49 +981,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-Bk-lDm">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBw-mU-WHb">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="120"/>
-                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="KRT-qx-Yon"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oh my Kot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAJ-Z4-8uv">
-                                        <rect key="frame" x="71" y="-21" width="232" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
-                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faM-aR-xNM">
-                                        <rect key="frame" x="38" y="86" width="135" height="148"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-PY-8IS">
-                                        <rect key="frame" x="205" y="86" width="135" height="148"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-ik-MKr">
-                                        <rect key="frame" x="38" y="261" width="135" height="148"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3c4-LF-OCe">
-                                        <rect key="frame" x="205" y="261" width="135" height="148"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="SBw-mU-WHb" firstAttribute="top" secondItem="iVK-Bk-lDm" secondAttribute="top" id="28l-Z9-1t7"/>
-                                    <constraint firstItem="SBw-mU-WHb" firstAttribute="centerX" secondItem="iVK-Bk-lDm" secondAttribute="centerX" id="Vqr-IM-8UT"/>
-                                    <constraint firstAttribute="trailing" secondItem="SBw-mU-WHb" secondAttribute="trailing" id="a5v-9t-dD1"/>
-                                    <constraint firstAttribute="bottom" secondItem="SBw-mU-WHb" secondAttribute="bottom" constant="434" id="htv-73-FWf"/>
-                                    <constraint firstItem="SBw-mU-WHb" firstAttribute="leading" secondItem="iVK-Bk-lDm" secondAttribute="leading" id="yXt-xt-g8q"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

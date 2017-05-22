@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class UserService: NSObject{
     public static let shared = UserService()
-    typealias ResponseResult = (JSON) -> ()
+    typealias ResponseResult = (Bool) -> ()
     
     func createUser(json: JSON, handler: @escaping ResponseResult){
         var request = URLRequest(url: URL(string: UrlBuilder.shared.user())!)
@@ -29,11 +29,18 @@ class UserService: NSObject{
             switch resp.result {
             case .success(let value):
                 let json = JSON(value)
-                handler(json)
+                let loginExists = json["login"].boolValue
+                let mailExists = json["pwd"].boolValue
+                
+                if (!loginExists && !mailExists){
+                    handler(true)
+                }else{
+                    handler(false)
+                }
                 
             case .failure(let error):
                 print(error.localizedDescription)
-                handler(json)
+                handler(false)
             }
         })
     }
@@ -42,8 +49,9 @@ class UserService: NSObject{
     func isElementExists(element: String, value: String, handler: @escaping (Int) -> ()){
         let url = UrlBuilder.shared.isElementExistGetQuery(element: element, value: value)
         
-        var request = URLRequest(url: URL(string: url.addingPercentEncoding(withAllowedCharacters: CharacterSet.punctuationCharacters)!)!)
+        var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "GET"
+        print(UrlBuilder.shared.isElementExistGetQuery(element: element, value: value))
         
         Alamofire.request(request as URLRequestConvertible).responseJSON(completionHandler: {(resp: DataResponse<Any>) in
             switch resp.result {
@@ -52,7 +60,8 @@ class UserService: NSObject{
                 handler(json["exists"].intValue)
                 
             case .failure(let error):
-                print("error:")
+                print("error is ElementExists:")
+                print(error)
                 print(error.localizedDescription)
                 handler(-1)
             }
