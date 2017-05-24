@@ -31,6 +31,8 @@ class MailLogInViewController: UIViewController {
         validButton.setTitleColor(disabeledButtonColor, for: UIControlState.disabled)
         validButton.setTitleColor(UIColor.darkGray, for: UIControlState.normal)
         
+        
+        
         self.login_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
         self.lastName_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
         self.firstName_textField.addTarget(self, action: #selector(validate(_:)), for: UIControlEvents.editingChanged)
@@ -131,8 +133,6 @@ class MailLogInViewController: UIViewController {
     }
 
     func is_all_valid() -> Bool{
-        
-        
         return true
     }
     
