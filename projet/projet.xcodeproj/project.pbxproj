@@ -26,6 +26,7 @@
 		C1B71A5B1E65AA95005156FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5A1E65AA95005156FA /* HomeViewController.swift */; };
 		C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5C1E65B427005156FA /* ExistingFlatsViewController.swift */; };
 		C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B71A5F1E65B6DB005156FA /* BannerImageView.swift */; };
+		C1FD8A311ED5D01E00242006 /* ConnectionCustomValidateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD8A301ED5D01E00242006 /* ConnectionCustomValidateButton.swift */; };
 		DD48C3F11ED585320038C0EA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48C3F01ED585320038C0EA /* CalendarViewController.swift */; };
 		DD4CEDC51E8A499C0017D93F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */; };
 		DD6BC6FB1EADF3C300B32E4F /* DoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC6FA1EADF3C300B32E4F /* DoodleViewController.swift */; };
@@ -56,6 +57,7 @@
 		C1B71A5A1E65AA95005156FA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = projet/tablesViewControl/preViewControl/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		C1B71A5C1E65B427005156FA /* ExistingFlatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingFlatsViewController.swift; sourceTree = "<group>"; };
 		C1B71A5F1E65B6DB005156FA /* BannerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerImageView.swift; sourceTree = "<group>"; };
+		C1FD8A301ED5D01E00242006 /* ConnectionCustomValidateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCustomValidateButton.swift; sourceTree = "<group>"; };
 		C95C04A602CF5CC462CFE90C /* Pods-projet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet.release.xcconfig"; path = "Pods/Target Support Files/Pods-projet/Pods-projet.release.xcconfig"; sourceTree = "<group>"; };
 		DD48C3F01ED585320038C0EA /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = projet/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -145,6 +147,7 @@
 			children = (
 				DD4CEDC41E8A499C0017D93F /* AppDelegate.swift */,
 				C10CF01E1EC07776000410DF /* FieldValidation.swift */,
+				C1FD8A301ED5D01E00242006 /* ConnectionCustomValidateButton.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				C1B71A601E65B6DB005156FA /* BannerImageView.swift in Sources */,
 				C1B71A5D1E65B427005156FA /* ExistingFlatsViewController.swift in Sources */,
 				DDD582661ECC702B00100D9B /* HomeCollectionViewCell.swift in Sources */,
+				C1FD8A311ED5D01E00242006 /* ConnectionCustomValidateButton.swift in Sources */,
 				C140FE641E5F072400D72763 /* ViewController.swift in Sources */,
 				C17565CC1EB8B81E0077A70F /* User.swift in Sources */,
 				C10CF01F1EC07776000410DF /* FieldValidation.swift in Sources */,
